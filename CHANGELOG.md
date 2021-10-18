@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/DockerToolbox/tgenv/compare/v0.1.0...HEAD)
 
-- update [`[head]`](https://github.com/DockerToolbox/tgenv/commit/)
+- Move auto builds to weekly [`[head]`](https://github.com/DockerToolbox/tgenv/commit/)
+
+- update [`[e79dbb1]`](https://github.com/DockerToolbox/tgenv/commit/e79dbb1a973ce721d7b8a1c9646ab83546e6a11e)
 
 - first commit [`[16f7381]`](https://github.com/DockerToolbox/tgenv/commit/16f73818264b1da7b9b336d22a4988058cef1602)
 
