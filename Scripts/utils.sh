@@ -3,7 +3,7 @@
 set -e
 
 DOCKER_HUB_ORG='wolfsoftwareltd'
-CONTAINER_PREFIX='tfenv'
+CONTAINER_PREFIX='tgenv'
 
 function setup()
 {
