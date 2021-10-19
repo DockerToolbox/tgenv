@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/DockerToolbox/tgenv/compare/v0.1.0...HEAD)
 
-- Expose the path [`[head]`](https://github.com/DockerToolbox/tgenv/commit/)
+- update [`[head]`](https://github.com/DockerToolbox/tgenv/commit/)
+
+- Expose the path [`[0f8f9e2]`](https://github.com/DockerToolbox/tgenv/commit/0f8f9e2eb500c57cee4aa48ab716b7e3c3f5462f)
 
 - Update for wrong name [`[1c66689]`](https://github.com/DockerToolbox/tgenv/commit/1c6668993a1b0d9f7b941a194fddae653b5ff609)
 

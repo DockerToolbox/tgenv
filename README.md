@@ -35,82 +35,82 @@
 
 This is a selection of Docker containers preinstalled with [tgenv](https://github.com/cunymatthieu/tgenv) so that you can use any version of [Terragrunt](https://terragrunt.gruntwork.io/) you want, or even install multiple versions.
 
-We try to offer as many operating system flavours as possible, but we only use currently supported versions of each one.
+We use our [framework](https://github.com/DockerToolbox/framework) containers as the base to keep the install simple and consistent.
 
-| Dockerfile | Docker Hub Repo | Docker Hub Tags |
-| --- | --- | --- |
-| [Alpine Linux 3.11](Dockerfiles/alpine/3.11/Dockerfile)             | [wolfsoftwareltd/tgenv-alpine](https://hub.docker.com/r/wolfsoftwareltd/tgenv-alpine)           | 3.11                        |
-| [Alpine Linux 3.12](Dockerfiles/alpine/3.12/Dockerfile)             | [wolfsoftwareltd/tgenv-alpine](https://hub.docker.com/r/wolfsoftwareltd/tgenv-alpine)           | 3.12                        |
-| [Alpine Linux 3.13](Dockerfiles/alpine/3.13/Dockerfile)             | [wolfsoftwareltd/tgenv-alpine](https://hub.docker.com/r/wolfsoftwareltd/tgenv-alpine)           | 3.13, latest                |
-| [Alpine Linux 3.14](Dockerfiles/alpine/3.14/Dockerfile)             | [wolfsoftwareltd/tgenv-alpine](https://hub.docker.com/r/wolfsoftwareltd/tgenv-alpine)           | 3.14                        |
-| [Amazon Linux 1](Dockerfiles/amazonlinux/1/Dockerfile)              | [wolfsoftwareltd/tgenv-amazonlinux](https://hub.docker.com/r/wolfsoftwareltd/tgenv-amazonlinux) | 1                           |
-| [Amazon Linux 2](Dockerfiles/amazonlinux/2/Dockerfile)              | [wolfsoftwareltd/tgenv-amazonlinux](https://hub.docker.com/r/wolfsoftwareltd/tgenv-amazonlinux) | 2, latest                   |
-| [Centos 7](Dockerfiles/centos/7/Dockerfile)                         | [wolfsoftwareltd/tgenv-centos](https://hub.docker.com/r/wolfsoftwareltd/tgenv-centos)           | 7,                          |
-| [Centos 8](Dockerfiles/centos/8/Dockerfile)                         | [wolfsoftwareltd/tgenv-centos](https://hub.docker.com/r/wolfsoftwareltd/tgenv-centos)           | 8, latest                   |
-| [Debian 9 (Stretch)](Dockerfiles/debian/9/Dockerfile)               | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 9, stretch                  |
-| [Debian 9 (Stretch Slim)](Dockerfiles/debian/9-slim/Dockerfile)     | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 9-slim, stretch-slim        |
-| [Debian 10 (Buster)](Dockerfiles/debian/10/Dockerfile)              | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 10, buster                  |
-| [Debian 10 (Buster Slim)](Dockerfiles/debian/10-slim/Dockerfile)    | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 10-slim, buster-slim        |
-| [Debian 11 (Bullseye)](Dockerfiles/debian/11/Dockerfile)            | [wolfsoftwareltd/tgenv-centos](https://hub.docker.com/r/wolfsoftwareltd/tgenv-centos)           | 11, bullseye, latest        |
-| [Debian 11 (Bullseye Slim)](Dockerfiles/debian/11-slim/Dockerfile)  | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 11-slim, bullseye-slim      |
-| [Debian 12 (Bookworm)](Dockerfiles/debian/12/Dockerfile)            | [wolfsoftwareltd/tgenv-centos](https://hub.docker.com/r/wolfsoftwareltd/tgenv-centos)           | 12, bookworm                |
-| [Debian 12 (Bullseye Slim)](Dockerfiles/debian/11-slim/Dockerfile)  | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 12-slim, bookworm-slim      |
-| [Ubuntu 14.04 (Trusty Tahr)](Dockerfiles/ubuntu/14.04/Dockerfile)   | [wolfsoftwareltd/tgenv-ubuntu](https://hub.docker.com/r/wolfsoftwareltd/tgenv-ubuntu)           | 14.04, trusty               |
-| [Ubuntu 16.04 (Xenial Xerus)](Dockerfiles/ubuntu/16.04/Dockerfile)  | [wolfsoftwareltd/tgenv-ubuntu](https://hub.docker.com/r/wolfsoftwareltd/tgenv-ubuntu)           | 16.04, xenial               |
-| [Ubuntu 18.04 (Bionic Beaver)](Dockerfiles/ubuntu/18.04/Dockerfile) | [wolfsoftwareltd/tgenv-ubuntu](https://hub.docker.com/r/wolfsoftwareltd/tgenv-ubuntu)           | 18.04, bionic               |
-| [Ubuntu 20.04 (Focal Fossa)](Dockerfiles/ubuntu/20.04/Dockerfile)   | [wolfsoftwareltd/tgenv-ubuntu](https://hub.docker.com/r/wolfsoftwareltd/tgenv-ubuntu)           | 20.04, focal, latest        |
+## Supported Operating Systems
+
+| Operating System             | Docker Hub Repo                                                                                 | Docker Hub Tags             |
+| ---------------------------- | -------------------------------------------------------------y---------------------------------- | --------------------------- |
+| Alpine Linux 3.11            | [wolfsoftwareltd/tgenv-alpine](https://hub.docker.com/r/wolfsoftwareltd/tgenv-alpine)           | 3.11                        |
+| Alpine Linux 3.12            | [wolfsoftwareltd/tgenv-alpine](https://hub.docker.com/r/wolfsoftwareltd/tgenv-alpine)           | 3.12                        |
+| Alpine Linux 3.13            | [wolfsoftwareltd/tgenv-alpine](https://hub.docker.com/r/wolfsoftwareltd/tgenv-alpine)           | 3.13                        |
+| Alpine Linux 3.14            | [wolfsoftwareltd/tgenv-alpine](https://hub.docker.com/r/wolfsoftwareltd/tgenv-alpine)           | 3.14, latest                |
+| Amazon Linux 1               | [wolfsoftwareltd/tgenv-amazonlinux](https://hub.docker.com/r/wolfsoftwareltd/tgenv-amazonlinux) | 1                           |
+| Amazon Linux 2               | [wolfsoftwareltd/tgenv-amazonlinux](https://hub.docker.com/r/wolfsoftwareltd/tgenv-amazonlinux) | 2, latest                   |
+| Centos 7                     | [wolfsoftwareltd/tgenv-centos](https://hub.docker.com/r/wolfsoftwareltd/tgenv-centos)           | 7,                          |
+| Centos 8                     | [wolfsoftwareltd/tgenv-centos](https://hub.docker.com/r/wolfsoftwareltd/tgenv-centos)           | 8, latest                   |
+| Debian 9 (Stretch)           | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 9, stretch                  |
+| Debian 9 (Stretch Slim)      | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 9-slim, stretch-slim        |
+| Debian 10 (Buster)           | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 10, buster                  |
+| Debian 10 (Buster Slim)      | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 10-slim, buster-slim        |
+| Debian 11 (Bullseye)]        | [wolfsoftwareltd/tgenv-centos](https://hub.docker.com/r/wolfsoftwareltd/tgenv-centos)           | 11, bullseye, latest        |
+| Debian 11 (Bullseye Slim)    | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 11-slim, bullseye-slim      |
+| Debian 12 (Bookworm)         | [wolfsoftwareltd/tgenv-centos](https://hub.docker.com/r/wolfsoftwareltd/tgenv-centos)           | 12, bookworm                |
+| Debian 12 (Bookworm Slim)    | [wolfsoftwareltd/tgenv-debian](https://hub.docker.com/r/wolfsoftwareltd/tgenv-debian)           | 12-slim, bookworm-slim      |
+| Ubuntu 14.04 (Trusty Tahr)   | [wolfsoftwareltd/tgenv-ubuntu](https://hub.docker.com/r/wolfsoftwareltd/tgenv-ubuntu)           | 14.04, trusty               |
+| Ubuntu 16.04 (Xenial Xerus)  | [wolfsoftwareltd/tgenv-ubuntu](https://hub.docker.com/r/wolfsoftwareltd/tgenv-ubuntu)           | 16.04, xenial               |
+| Ubuntu 18.04 (Bionic Beaver) | [wolfsoftwareltd/tgenv-ubuntu](https://hub.docker.com/r/wolfsoftwareltd/tgenv-ubuntu)           | 18.04, bionic               |
+| Ubuntu 20.04 (Focal Fossa)   | [wolfsoftwareltd/tgenv-ubuntu](https://hub.docker.com/r/wolfsoftwareltd/tgenv-ubuntu)           | 20.04, focal, latest        |
+
+> Docker containers are automatically rebuilt and published weekly (Mondays 3am)
 
 ## Naming convention
 
 ### Local containers
 
 ```
-  tgenv-<os>-<version> e.g. tgenv-debian-10
+tgenv-<os>-<version> e.g. tgenv-debian-10
 ```
 
 ### Published containers
 
 ```
-  wolfsoftwareltd/tgenv-<os>:<version> e.g. wolfsoftwareltd/tgenv-debian:10
+wolfsoftwareltd/tgenv-<os>:<version> e.g. wolfsoftwareltd/tgenv-debian:10
 ```
 
 ## Development
 
+We do not include Dockerfiles with the repository as these are generated dynamically when required. We supply a helper script to do a lot of the heavy listing.
+The helper script is called `manage-all.sh` and can be from any level of the directory tree and is recursive.
+
+> If you are in the top level directory you will need to use `manage.sh` instead of `manage-all.sh`
+
 ### Generate Dockerfiles
 
-This can be done from any level of the directory tree and is recursive.
-
 ```
-./manange-all.sh generate
+./manage-all.sh generate
 ```
 
 ### Build Containers
 
-This can be done from any level of the directory tree and is recursive.
-
 ```
-./manange-all.sh build [clean]
+./manage-all.sh build [clean]
 ```
 
 ### Scan Containers
 
-This can be done from any level of the directory tree and is recursive.
-
 ```
-./manange-all.sh scan         
+./manage-all.sh scan         
 ```
 
 ### Publish Containers
 
-This can be done from any level of the directory tree and is recursive.
-
 ```
-./manange-all.sh publish
+./manage-all.sh publish
 ```
 
-If you want to publish the containers you will need to update the [utils.sh](Scripts/utils.sh) script and change the following lines.
+If you want to publish the containers you will need to update the [utils.sh](Scripts/utils.sh#L5) script and change the following line.
 
 ```
 DOCKER_HUB_ORG='wolfsoftwareltd'
-CONTAINER_PREFIX='tgenv'
 ```
